@@ -185,24 +185,58 @@ li.diff-Member {
     display: inline-block;
     padding: 0;
     position: relative;
-    top: 1px;
-    width: 16px;
-    height: 16px;
+    top: 0.125em;
+    width: 1em;
+    height: 1em;
     background-repeat: no-repeat;
+    background-size: 1em 1em;
 }
 .fugeticon:before {
     content: "\00A0";
 }
+.fugeticon-file { background-image: url(/images/code/Document_16x.svg); }
 .fugeticon-package { background-image: url(/images/code/CSPackage_16x.svg); }
 .fugeticon-assembly { background-image: url(/images/code/Assembly_16x.svg); }
 .fugeticon-namespace { background-image: url(/images/code/Namespace_16x.svg); }
 .fugeticon-class { background-image: url(/images/code/Class_16x.svg); }
-.fugeticon-staticclass { background-image: url(/images/code/ClassSealed_16x.svg); }
+.fugeticon-staticclass { background-image: url(/images/code/Module_16x.svg); }
 .fugeticon-abstractclass { background-image: url(/images/code/AbstractClass_16x.svg); }
 .fugeticon-interface { background-image: url(/images/code/CSInterface_16x.svg); }
 .fugeticon-enum { background-image: url(/images/code/Enumerator_16x.svg); }
 .fugeticon-delegate { background-image: url(/images/code/Event_16x.svg); }
 .fugeticon-struct { background-image: url(/images/code/Structure_16x.svg); }
+.fugeticon-method { background-image: url(/images/code/Method_16x.svg); }
+.fugeticon-field { background-image: url(/images/code/Field_16x.svg); }
+.fugeticon-event { background-image: url(/images/code/Event_16x.svg); }
+.fugeticon-property { background-image: url(/images/code/Property_16x.svg); }
+.fugeticon-unknown { background-image: url(/images/code/Cube_16x.svg); }
+
+
+.boxcontents {
+    display: inline-block;
+    width: 18em;
+    
+    min-height: 4em;
+    border:1px solid rgb(128,128,128,0.5);
+    vertical-align: top;
+    margin: 0.5em 0.25em;
+    padding: 0.25em;
+    border-radius: 0.5em;
+    text-align: center;
+    color: #333 !important;
+}
+.boxcontents:hover { background-color: #EEE; }
+a .boxcontents {
+    text-decoration: none;
+}
+.boxcontents .title {
+    overflow:hidden;
+}
+.boxcontents small {
+    display: block;
+    opacity: 65%;
+}
+
 
 
 @media (prefers-color-scheme: dark) {
@@ -309,5 +343,26 @@ li.diff-Member {
     .c-pd { color: rgb(52, 192, 252) !important; font-weight: bold; }
     .c-er { color: #986801 !important; }
     .c-ed { color: #986801 !important; font-weight: bold; }
+
+    .fugeticon-file { background-image: url(/images/code/Document_16x_dark.svg); }
+    .fugeticon-package { background-image: url(/images/code/CSPackage_16x_dark.svg); }
+    .fugeticon-assembly { background-image: url(/images/code/Assembly_16x_dark.svg); }
+    .fugeticon-namespace { background-image: url(/images/code/Namespace_16x_dark.svg); }
+    .fugeticon-class { background-image: url(/images/code/Class_16x_dark.svg); }
+    .fugeticon-staticclass { background-image: url(/images/code/Module_16x_dark.svg); }
+    .fugeticon-abstractclass { background-image: url(/images/code/AbstractClass_16x_dark.svg); }
+    .fugeticon-interface { background-image: url(/images/code/CSInterface_16x_dark.svg); }
+    .fugeticon-enum { background-image: url(/images/code/Enumerator_16x_dark.svg); }
+    .fugeticon-delegate { background-image: url(/images/code/Event_16x_dark.svg); }
+    .fugeticon-struct { background-image: url(/images/code/Structure_16x_dark.svg); }
+    .fugeticon-method { background-image: url(/images/code/Method_16x_dark.svg); }
+    .fugeticon-field { background-image: url(/images/code/Field_16x_dark.svg); }
+    .fugeticon-event { background-image: url(/images/code/Event_16x_dark.svg); }
+    .fugeticon-property { background-image: url(/images/code/Property_16x_dark.svg); }
+    .fugeticon-unknown { background-image: url(/images/code/Cube_16x_dark.svg); }
+
+    .boxcontents { color: #ddd !important; }
+    .boxcontents:hover { background-color: #333; }
+
 }
 
